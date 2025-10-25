@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Purchase</title>
+</head>
+<body>
+        <div id = "header">
+        <a id = "logo" href="MidtermLabExam.HTML"> <img src="logo.png" alt="" ></a>
+        <a href="MidtermLabExam.HTML" id="home" class="nav">Home</a>
+        <a href="Musical Intruments.html" id="instruments" class="nav">Muscial Instruments</a>
+        <a href="Order.html" id="order" class="nav">Order</a>
+        <a href="My Profile.html" id="profile" class="nav">My Profile</a>
+    </div>
+        <main>
+            <div id="result-thank">
+                <h1>Thank you for your Purchase!</h1>
+            </div>
+            <div id="result-confirm">
+                <p>A confirmation email was sent to your account! Kindly check the details below if they are correct before proceeding with your transaction.</p>
+            </div>
+            <div id="container-div">
+            <div id="result">
+                <div class="space-deets">
+                <p><span class="deets"><strong>Name: </strong></span><span class="ans" id ="display-name"></span></p></div>
+                <div class="space-deets">
+                <p><span class="deets"><strong>Email: </strong></span><span class="ans" id ="display-email"></span></p></div>
+                <div class="space-deets">
+                <p><span class="deets"><strong>Address: </strong></span><span class="ans" id ="display-address"></span></p> 
+                </div>
+                <div class="space-deets">
+                <p><span class="deets"><strong>Chosen Drums: </strong></span><span class="ans" id ="display-drums"></span></p> 
+                </div>
+                <div class="space-deets">
+                <p><span class="deets"><strong>Chosen Brass: </strong></span><span class="ans" id ="display-brass"></span></p> 
+                </div>
+                <div class="space-deets">
+                <p><span class="deets"><strong>Chosen Guitar: </strong></span><span class="ans" id ="display-guitar"></span></p> 
+                </div>
+            </div>
+            </div>
+        </main>
+
+
+
+        <div id="footer">
+        <p>
+            Members:
+            <span>Cerbito, John Mark</span><span>Contridas, Lien Mar</span><span>Mabalot, Clarence</span><span>Yudelmo, Renzo</span><span>Zamudio, Angeline Mickey</span>
+
+        </p>
+    </div>
+
+
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const name = urlParams.get('name');
+            const email = urlParams.get('email');
+            const address = urlParams.get('address');
+
+            const drums = urlParams.get('drums');
+            const brass = urlParams.get('brass');
+            const guitar = urlParams.get('guitar');
+
+
+            if(name){
+                document.getElementById('display-name').textContent = name;
+            }
+            if(email){
+                document.getElementById('display-email').textContent = email;
+            }
+            if(address){
+                document.getElementById('display-address').textContent = address;
+            }
+            if(drums){
+                document.getElementById('display-drums').textContent = drums;
+            }
+            if(brass){
+                document.getElementById('display-brass').textContent = brass;
+            }
+            if(guitar){
+                document.getElementById('display-guitar').textContent = guitar;
+            }
+
+
+
+
+        </script>
+</body>
+</html>

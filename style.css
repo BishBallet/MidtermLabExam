@@ -1,0 +1,386 @@
+/*Main*/
+body{
+    background-color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#musc-inst-title{
+    font-family: "Honk", system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: #F5F5F5;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+#tagline p{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 53px;
+    color: #F5F5F5;
+    margin-top:  25px;
+    margin-bottom: 15px;
+}
+
+#description p{
+    background-color: #1a1a1a5a;
+    color: #B3B3B3;
+    padding-top: 0%;
+    margin-top: 0%;
+    font-family: 'Google Sans code', monospace;
+    font-size: 15px;
+    text-align:justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 2;
+    margin-left: -10px;
+    margin-right: 0px;
+}
+
+#header img{
+    height: 75px;
+    width:100px;
+    padding-left: 7px;
+    padding-right: 5px;
+}
+#header{
+    border-radius: 7px;
+    background-color: #1A1A1A;
+    padding-top: 10px;
+    border-bottom: solid 3px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-bottom: 3px;
+}
+
+#header a{
+    text-decoration: none;
+    color: #D4A437;
+    font-size: 16px;
+    border: none;
+    margin-right: 25px;
+    transition: box-shadow 0.25s;
+}
+
+#header #home:hover{
+    box-shadow: 0 0.6em 0.5em -0.4em #E15FED;
+}
+
+#header #instruments:hover{
+    box-shadow: 0 0.6em 0.5em -0.4em #00EAD3;
+}
+
+#header #order:hover{
+    box-shadow: 0 0.6em 0.5em -0.3em #F55353;
+}
+
+#header #profile:hover{
+    box-shadow: 0 0.6em 0.5em -0.4em #ffffff;
+}
+
+#profile{
+   text-align: right;
+}
+
+.pics{
+    border-radius: 25px;
+    background-color: #d4a53713;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.frame{
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+    width: 600px;
+}
+
+.frame img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#left{
+    flex: 2;
+    margin-right: 5px;
+}
+
+#right{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+
+#footer{
+    margin-top: auto;
+    background-color:#1A1A1A;
+    left: 0;
+    bottom: 0;
+    width: 98.6%;
+    padding-left: 20px;
+    margin-right: 0px;
+}
+
+#footer p{
+    text-align: justify;
+    font-size: 14px;
+    color: #B3B3B3;
+    letter-spacing: 4px;
+}
+
+#footer span{
+    margin-left: 3%;
+}
+
+/*Musical Instrument*/
+#instruments-choice{
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   flex-wrap: wrap;
+   text-align: center;
+   color: #B3B3B3;
+    background-color: #1a1a1a5a;
+    height: auto;
+}
+
+.instrument-name-description{
+    font-family: 'Google Sans code', monospace;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.instrument-container {
+    max-width: 400px;
+    margin: 15px;
+    background-color: #d4a53713;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+.instrument-container:hover{
+    box-shadow: 0 0.6em 0.5em -0.4em #ffffff;
+    opacity: 0.9;
+}
+
+.instrument-name-title{
+    align-items: flex-start;
+    display: flex;
+}
+#instruments-choice a{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+#instruments-choice img{
+    height: 300px;
+    max-width: 400px;
+    gap: 100px;
+    border-radius: 10px;
+}
+
+#guitar img{
+    align-items: center;
+    height: 350px;
+    width: auto;
+}
+
+#drums img{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+#brass img{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+/*Products Page*/
+#container-product{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap:nowrap;
+    text-align: center;
+    color: #B3B3B3;
+    background-color: #1a1a1a5a;
+    height: auto;
+}
+.product{
+    background-color: #d4a53713;
+    border-radius: 50px;
+}
+#product-header{
+    margin-left:20px ;
+    color: #F5F5F5;
+    font-family: 'Google Sans code', monospace;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+.product img{
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.product-name p{
+    color: #F5F5F5;
+}
+
+.price{
+    color: #D4A437;
+    transition: 0.25s;
+}
+.price:hover{
+    cursor: default;
+    text-decoration: underline #b3b3b3;
+}
+
+.product-description{
+    color: #F5F5F5;
+    font-size: 12px;
+    text-align:center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+/*Order Page*/
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 65vh;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 25px;
+    max-width: 75%;
+    background-color: #d4a53787;
+}
+#inner{
+    background-color: #1A1A1A;
+    height: 65vh;
+    border-radius: 70px;
+}
+
+label{
+    color: #D4A437;
+    font-size: 30px;
+}
+.note{
+    text-align: justify;
+    color: #D4A437;
+    font-size: 20px;
+}
+form{
+    text-align: center;
+}
+
+.basic{
+    margin-top: 20px;
+}
+.note{
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 3px;
+    font-family: 'Google Sans code', monospace;
+    font-size: 15px;
+    text-align:justify;
+}
+#adjust-brass{
+    justify-content: space-between;
+    margin-left: 200px;
+    text-align: left;
+
+}
+#adjust-guitar{
+    justify-content: space-between;
+    margin-left: 367px;
+    text-align: left;
+
+}
+
+#submit{
+    margin-top: 35px;
+}
+
+#result-thank{
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+#result-confirm{
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: #b3b3b3;
+    font-family: 'Google Sans code', monospace;
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 2;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#result{
+    text-align: center;
+    border-radius: 20px;
+    max-width: 700px;
+    background-color: #D4A437;
+    margin-left: 325px;
+    margin-right: 200px;
+}
+
+.space-deets{
+    font-family: 'Google Sans code', monospace;
+    font-size: 20px;
+    margin: 10px;
+    font-family: "Honk", system-ui;
+    padding: 7px;
+    text-align: left;
+    color: #0D0D0D;
+}
+
+.ans{
+    font-family: 'Google Sans code', monospace;
+    font-size: 20px;
+    margin-left: 30px;
+    color: #1A1A1A;
+}
